@@ -1,0 +1,7 @@
+input_text = "i am so happy right now" #@param {type:"string"}
+#!pip install googletrans==3.1.0a0
+import googletrans
+from googletrans import Translator
+translater = Translator()
+out = translater.translate(input_text, dest="hi")
+print(out)
